@@ -1,0 +1,116 @@
+.login{
+    .container{
+        padding-top: 60px;
+    }
+ 
+    &-tabs{
+        a{  
+            font-weight: 500;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #121212;
+            line-height: 29px;
+
+            &:first-child{
+                margin-right: 45px;
+            }
+
+            &.active,
+            &:hover{
+                color: #ff662c;
+            }
+
+            @media(max-width: 970px){
+                &:first-child{
+                    margin-right: 44px;
+                }
+            }
+        }
+    }
+
+    &-margin{
+        margin-top: 48px;
+    }
+
+    input{
+        letter-spacing: -0.015em;
+    }
+
+    &-description{
+        font-size: 16px;
+        letter-spacing: -0.01em;
+        color: #121212;
+        margin-top: 45px;
+        margin-bottom: 45px;
+
+        @media(max-width: 970px){
+            margin-top: 31px;
+            margin-bottom: 30px;
+            margin-bottom: 32px;
+            line-height: 19px;
+        }
+    }
+
+    &-link{
+        margin-top: 14px;
+        display: inline-block;
+        letter-spacing: -0.01em;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #121212;
+        line-height: 22px;
+    }
+ 
+    label{
+        margin-bottom: 47px;
+
+        &.last{
+            margin-bottom: 0px;
+        }
+        
+        @media(max-width: 970px){
+            margin-bottom: 23px;
+        }
+ 
+        &.password input{
+            padding-right: 30px;
+            height: 44px;
+            background-position: right center;
+            background-repeat: no-repeat;
+
+            background-image: url('/images/eye-closed.svg');
+
+            &:not([type="password"]){
+                background-image: url('/images/eye-closed.svg');
+            }
+        }
+    }
+ 
+    .grid{
+        display: block;
+
+        @media(min-width: 970px){
+            display: grid;
+            grid-template-columns: 547px 160px;
+            grid-column-gap: 133px;
+        }
+    }
+}
+
+@media(max-width: 969px){
+    .complete_form{
+        margin-top: 31px;
+    
+        .checkbox{
+            margin-top: 31px;
+    
+            &::before{ 
+                top: calc(50% - 18px);
+            }
+        }
+    
+        .circle-button{
+            margin-top: 30px;
+        }
+    }
+}

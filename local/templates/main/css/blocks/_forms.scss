@@ -1,0 +1,44 @@
+.contact-form{
+    &__result{
+        margin-bottom: 25px;
+        background-color: var(--green);
+        padding: 15px 20px;
+        color: white;
+        font-size: 18px;
+        margin-top: -10px;
+        display: inline-block;
+    }
+
+    .contact-form__colimn:first-child{
+        grid-column: 1/19;
+        
+        @media(min-width: 768px){
+            grid-column: 1/7;
+        }
+    }
+    .contact-form__colimn:nth-child(2){
+        grid-column: 1/19;
+
+        @media(min-width: 768px){
+            grid-column: 7/13;
+        }
+
+        label{
+            height: calc(100% - 15px);
+        }
+    }
+    .contact-form__colimn:nth-child(3){
+        grid-column: 1/19;
+        
+        @media(min-width: 768px){
+            grid-column: 13/19;
+        }
+    }
+    textarea{
+        height: 100%;
+    }
+
+    .paragraf{
+        margin-top: 20px;
+    }
+}

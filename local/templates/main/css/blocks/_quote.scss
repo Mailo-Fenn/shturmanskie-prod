@@ -1,0 +1,33 @@
+// .quote
+.quote{
+    .container{
+        width: 890px;    
+    }
+
+    h2{
+        font-weight: 400;
+        font-size: 36px;
+        letter-spacing: -0.03em;
+        line-height: 44px;
+        text-align: center;
+        color: #121212;
+        margin-top: 5px;
+
+
+        @media(max-width: 970px){
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 118%;
+            letter-spacing: -0.05em;
+            text-align: center;
+            color: #121212;
+        }
+    }
+
+    &.dark{
+        h2{
+            margin-top: 0px;
+            color: white;
+        }
+    }
+}

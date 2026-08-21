@@ -1,0 +1,33 @@
+<?php
+    $MESS['SUBSCRIBE'] = 'Subscribe to our<br/>Newsletter';
+    $MESS['EMAIL'] = 'Email Address';
+    $MESS['SUBSCRIBED'] = 'You have successfully subscribed';
+    $MESS['ERROR'] = 'Email has already been added';
+    $MESS['BRAND'] = 'Brand';
+    $MESS['CATALOG'] = 'Catalog';
+    $MESS['COLLECTIONS'] = 'Collections';
+    $MESS['C_CASE'] = 'Customer care';
+    $MESS['COPY'] = 'Official website of Russian watches Sturmanskie';
+    $MESS['STORY'] = 'Our Story';
+    $MESS['WATCHES'] = 'Watches';
+    $MESS['STORES'] = 'Stores';
+    $MESS['SEARCH'] = 'Search in the website';
+    $MESS['OUR_COLLECTIONS'] = 'Our Collections';
+    $MESS['SPECIAL'] = 'Special Colllections';
+    $MESS['ABOUT'] = 'About us';
+    $MESS['MANUFACTURY'] = 'Manufactury';
+    $MESS['COLLABORATION'] = 'Collaboration';
+    $MESS['DISCOVER'] = 'Discover';
+    $MESS['SERVICE'] = 'Customer Care';
+    $MESS['SERVICECENTER'] = 'Service Center';
+    $MESS['BOUTIQUES'] = 'Boutiques';
+    $MESS['NEWS'] = 'News';
+    $MESS['SERVICES'] = 'Services';
+    $MESS['FIND'] = 'Find a Boutique';
+    $MESS['MAKE'] = 'Make an Appointment';
+    $MESS['CART'] = 'Cart';
+    $MESS['WARRANTY'] = 'Warranty';
+    $MESS['RETURNS'] = 'Returns';
+    $MESS['SHIPPING'] = 'Shipping';
+    $MESS['SERVICE_CENTER'] = 'Service Center';
+?>

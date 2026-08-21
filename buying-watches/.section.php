@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Гравировка";
+$arDirProperties = Array(
+
+);
+?>

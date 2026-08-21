@@ -1,0 +1,239 @@
+.donations{
+    &-form{
+        &__wrapper{
+            width: 1280px;
+            max-width: 100%;
+            margin: 0px auto;
+        }
+
+        &__tabs{
+            @media(min-width: 768px){
+                display: flex; 
+            }
+
+            &>div{
+                flex-direction: column;
+                text-align: center;
+                flex-grow: 1; 
+                border: 1px solid var(--gray);
+                border-bottom: none;
+                font-weight: 400;
+                color: var(--gray);
+                background-color: var(--yellow);
+                
+                padding: 15px 10px;
+                font-size: 20px;
+                line-height: 1.2;
+                
+
+                @media(min-width: 768px){
+                    display: flex;
+                    border-radius: 10px 10px 0px 0px;
+                }
+
+                @media(min-width: 1299px){
+                    padding: 20px 30px;
+                    font-size: 24px;    
+                }
+
+                &:hover,
+                &.active{
+                    cursor: pointer;
+                    background-color: var(--white);
+                }
+            }
+        }
+
+        &__body{
+            background-color: var(--white);
+            border: 1px solid var(--gray);
+            display: none;
+
+            &.active{
+                display: block;
+            }
+
+            &-wrapper{
+                width: 775px;
+                padding: 0px 20px;
+                max-width: 100%;
+                margin: 40px auto;
+                
+                @media(min-width: 768px){
+                    margin: 60px auto;
+                }
+            }
+
+            &-tabs{
+                display: flex;
+                border: 1px solid var(--gray);
+                border-radius: 12px;
+                overflow: hidden;
+
+                &>div{
+                    flex: 0 0 50%;
+                    background: var(--gray-btn);
+                    text-align: center;
+                    font-weight: 500;
+                    line-height: 1;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    padding: 15px;
+                    
+                    @media(min-width: 768px){
+                        font-size: 18px;
+                    padding: 25px;
+                    }
+
+                    &.active,
+                    &:hover{
+                        background-color: var(--green);
+                        color: var(--white);
+                        cursor: pointer;
+                    }
+
+                    &:first-child{
+                        border-right: 1px solid var(--gray);
+                    }
+                }
+            }
+
+            &-desc{
+                margin-top: 40px;
+                margin-bottom: 50px;
+                font-weight: 400;
+                font-size: 16px;
+                
+                @media(min-width: 768px){
+                    font-size: 18px;
+                }
+            }
+
+            &-block{
+                margin-bottom: 55px;
+
+                h3{
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 19px;
+                    line-height: 107%;
+                    text-transform: uppercase;
+                    color: #4f4f4f;
+                    margin-bottom: 30px;
+                }
+
+                .pay-count{
+                    background-color: var(--beige);
+                }
+
+                .row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 10px;
+                    margin-left: -5px;
+                    margin-right: -5px;
+
+                    @media(min-width: 768px){
+                        margin-left: -10px;
+                        margin-right: -10px;
+                        margin-bottom: 20px;
+                    }
+
+                    &>div{
+                        .pay-count{
+                            text-align: center;
+                            border: 1px solid #000;
+                            border-radius: 12px;
+                            height: 65px;
+                            line-height: 65px;
+                            font-weight: 400;
+                                font-size: 18px;
+                            text-transform: uppercase;
+                            margin: 0px 5px;
+                            width: calc(100% - 10px);
+
+                            &.swither:hover,
+                            &.active{
+                                background-color: var(--green);
+                                color: var(--white);
+                            }
+
+                            @media(min-width: 768px){
+                                width: calc(100% - 20px);
+                                margin: 0px 10px;
+                                font-size: 22px;
+                            }
+
+                            &.input{
+                                position: relative;
+
+                                span{
+                                    font-size: 12px;
+                                    position: absolute;
+                                    left: 15px;
+                                    top: -15px
+                                }
+
+                                input{
+                                    width: 100%;
+                                    margin-top: 0px;
+                                    margin-bottom: 0px;
+                                    height: 65px;
+                                    font-size: 22px;
+                                    padding: 20px 15px 0px 15px;
+                                    border: none;
+                                    background: none;
+
+                                    @media(max-width: 768px){
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .c4{
+                        flex: 0 0 33.33333%;
+                    }
+                    .c6{
+                        flex: 0 0 50%;
+                    }
+                }
+
+                &.contact-data{
+                    input{
+                        background-color: var(--beige);
+                        border-radius: 10px;
+                    }
+                }
+
+                button{
+                    width: 100%;
+                    text-align: left;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    &-links{
+        .three-links__item-icon{
+            width: 125px;
+            top: -125px;
+        }
+
+        .item-title{
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        .three-links__item{
+            padding-bottom: 40px;
+        }
+
+        .arrow-btn{
+            bottom: 0px;
+        }
+    }
+}

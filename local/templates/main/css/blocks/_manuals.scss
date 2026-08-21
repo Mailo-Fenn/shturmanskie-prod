@@ -1,0 +1,74 @@
+.manuals-title{
+    .container{
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    @media(max-width: 970px){
+        h1{
+            line-height: 40px;
+        }
+    }
+}
+
+.manuals-body{
+    .form-title{
+        margin-bottom: 30px;
+    }
+    .form label span{
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        &.margened{
+            margin-bottom: 33px;
+        }
+    }
+    .form-section button{
+        margin-top: 2px;
+        margin-bottom: 4px;
+    }
+
+
+    @media(max-width: 970px){
+        margin-top: 20px;
+
+        .second{
+            .form-title{
+                margin-top: 72px;
+            }
+            label{
+                margin-top: 30px;
+            }
+        }
+    
+        .third{
+            .form-title{
+                margin-bottom: 38px;
+            }
+
+            label{
+                padding-top: 0px;
+                padding-bottom: 0px;
+                margin-top: 30px;
+            }
+        }
+    
+        .fourth{
+            label{
+                margin-top: 30px;
+            }
+            
+            button{
+                margin-top: 0px;
+                margin-bottom: 20px;
+            }
+        }
+
+        label{
+            margin-top: 38px;
+        }
+
+        br{
+           display: inline-block; 
+        }
+    }
+}

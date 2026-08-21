@@ -1,0 +1,32 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"История бренда", 
+		"/about/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Производство", 
+		"/about/manufacture/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Новости", 
+		"/news/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Сотрудничество", 
+		"/about/collaboration/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

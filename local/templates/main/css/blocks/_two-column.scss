@@ -1,0 +1,112 @@
+.two-column{
+
+    p{
+        line-height: 22px;
+        font-size: 18px;
+        margin-bottom: 21px;
+
+        @media(max-width: 1445px){
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+            margin:20px 0px;
+        }
+    }
+
+    .grid{
+        display: block;
+
+        @media(min-width: 1445px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 39px;           
+        }
+
+        h2{
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+            margin-bottom: 26px;
+
+        }
+
+        div{
+            &>p:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    &.top-item{
+        .grid{
+            display: block;
+
+            @media(min-width: 1350px){
+                display: grid;
+                grid-template-columns: 445px 506px;
+                grid-column-gap: 200px;            
+            }
+        }
+
+    }
+
+
+    &.dark{
+        * {
+            color: white;
+        }
+
+        .section-title{
+            color: #ff662c;
+            letter-spacing: 0.02em;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media(max-width: 970px){
+    .collaboration__two-col.top-item{
+        .grid{
+            h2{
+                font-size: 18px;
+                line-height: 23px;
+                margin-bottom: 0px;
+            }
+            p{
+                line-height: 1.24;
+            }
+        }
+    }
+
+    .collaboration-video{
+        padding-top: 23px;
+    }
+
+    .collaboration__two-col:not(.top-item){
+        .section-title{
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 23px;
+            margin-bottom: 28px;
+            margin-top: 26px;
+            letter-spacing: 0.005em;
+        }
+
+        .grid{
+            &>div:first-child{
+                margin-bottom: 20px;
+            }
+
+            br{
+                display: inline-block;
+            }
+
+            p{
+                line-height: 1.23;
+                margin-top: 0px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.travel-banner {
+    background-position: center;
+    background-size: 1440px auto;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 694px;
+    background-image: url('/images/trevel_banner.png');
+
+    @media(max-width: 570px){
+        background-image: url('/images/travel_banner.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    @media(max-width: 970px){
+        margin-top: 20px;
+        height: 590px;
+    }
+
+    * {
+        color: #fff;
+    }
+
+    & .flex{
+        position: relative;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        margin: 0px auto;
+    }
+
+    .container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: auto;
+
+        @media(max-width: 970px){
+            padding-bottom: 40px;
+        }
+    }
+
+    .btn{
+        margin-left: 12px;
+        
+        @media(max-width: 970px){
+            margin-left: 0px;
+        }
+    }
+
+    &__content{
+        margin-top: auto;
+
+        .section-title{
+            padding-left: 12px;
+            margin-bottom: 22px;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 48px;
+
+            @media(max-width: 970px){
+                font-size: 24px;
+                line-height: 29px;
+                padding-left: 0px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

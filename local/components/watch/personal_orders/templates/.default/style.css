@@ -1,0 +1,51 @@
+.support_btns {
+	
+	margin-bottom: 2rem;
+	min-height: 30px;
+	
+}
+
+.support_btns a {
+	
+	display: block;
+	float: right;
+	margin-left: 14px;
+	cursor: pointer;
+
+}
+
+.support_btns a.where_status {
+	
+	background-color: #ff662c;
+	color: #ffffff;
+	font-size: 1rem;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	
+}
+
+.support_btns a.cancel_order {
+	
+	border: solid 1px #ececec;
+	font-size: 1rem;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	
+	
+}
+
+.support_btns a.cancel_order.noactive {
+	
+	cursor: default;
+	
+}
+
+.support_btns div.clear {
+	
+	clear: both;
+	
+}

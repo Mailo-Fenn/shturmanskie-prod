@@ -1,0 +1,24 @@
+.partners-slider{
+    margin-top: 30px;
+
+    @media(max-width: 767px){
+    margin-left: -5px;
+    margin-right: -5px;
+
+    }
+
+    &__item{
+        border: 2px solid var(--yellow);
+        height: 175px;
+        display: flex;
+        margin: 0px 15px;
+
+        @media(max-width: 767px){
+            margin: 0px 5px;
+        }
+
+        img{
+            margin: auto;
+        }
+    }
+}

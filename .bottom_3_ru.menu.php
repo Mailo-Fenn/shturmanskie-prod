@@ -1,0 +1,60 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Гагарин", 
+		"/catalog/gagarin/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Арктика", 
+		"/catalog/arktika/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Спутник", 
+		"/catalog/sputnik/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Открытый Космос", 
+		"/catalog/open-space/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Луна 25", 
+		"/catalog/luna/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Марс Lady", 
+		"/catalog/mars-lady/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Марс", 
+		"/catalog/mars/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Океан", 
+		"/catalog/ocean/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

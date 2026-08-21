@@ -1,0 +1,128 @@
+.slider-banner{
+    height: 800px;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    transition: 2s ease;
+
+    & .flex{
+        position: relative;
+        padding-bottom: 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+
+        @media(max-width: 970px){
+            padding-bottom: 33px;
+        }
+    }
+
+    &-play {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        bottom: 60px;
+
+        @media(max-width: 970px){
+            right: 24px;
+            bottom: 40px;
+
+            img{
+                width: 32px;
+            }
+        }
+    }
+
+    &-navigate {
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translate(0, -50%);
+        text-align: right;
+
+
+        @media(max-width: 970px){
+            display: none;
+        }
+
+        div {
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 400;
+            line-height: 15px;
+            font-size: 13px;
+            color: #808080;
+            margin-bottom: 16px;
+            transition: 0.65s ease;
+            padding-right: 46px;
+            position: relative;
+
+            &:after {
+                transition: 0.65s ease;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translate(0px, -50%);
+                margin-left: 5px;
+                display: inline-block;
+                content: " ";
+                width: 32px;
+                height: 1px;
+                background-color: #808080;
+            }
+
+            &:hover,
+            &.active{
+                padding-right: 78px;
+                color: white;
+                font-weight: 500;
+                font-size: 15px;
+                color: #fff;
+
+                &::after{
+                    width: 64px;
+                }
+            }
+        }
+    }
+
+    &__content {
+        margin-top: auto;
+
+        .sticker{
+            @media(max-width: 970px){
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 18px;
+                letter-spacing: 0.003em;
+            }
+        }
+
+        .title{
+            margin-top: 24px;
+            margin-bottom: 23px;
+
+
+            @media(max-width: 970px){
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 500;
+                margin-top: 0px;
+                margin-bottom: 20px;
+
+                br{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 970px){
+        height: 700px;
+        background-size: auto 380px;
+        background-position: right;
+    }
+}

@@ -1,0 +1,204 @@
+.news-banner{
+
+    &__grid{
+        display: grid;
+        grid-gap: 20px;
+
+        @media(min-width: 960px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &>div{
+            display: grid;
+            vertical-align: bottom;
+            align-items: end;
+
+            img{
+                margin: 0px auto;
+            }
+        }
+
+    }
+
+    .container{
+        text-align: center;
+    }
+}
+
+.dark-list{
+    background: #121212;
+    
+    .container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        @media(min-width: 970px){
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        @media(max-width: 1450px){
+            width: 960px;
+        }
+    }
+
+    .section-title{
+        letter-spacing: -0.012em;
+        margin-bottom: 24px;
+        line-height: 1.1;
+
+        @media(max-width: 970px){
+            font-size: 24px;
+        }
+    }
+
+    .paragraf{
+        width: 914px;
+        max-width: 100%;
+        line-height: 1.2;
+        font-size: 18px;
+        margin-bottom: 22px;
+
+        *{
+            color: white;
+        }
+
+        @media(max-width: 970px){
+            font-size: 14px;
+        }
+
+        &.marker{
+            padding-left: 28px;
+            position: relative;
+
+            &:before{
+                content: " ";
+                display: block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: white;
+                position: absolute;
+                left: 11px;
+                top: 9px;
+            }
+        }
+    }
+
+    &  .paragraf:last-child{
+        margin-bottom: 0px;
+    }
+    
+    * {
+        color: white;
+    }
+}
+
+.news-list{
+
+    .container{
+        @media(min-width: 1350px){
+            width: 1200px;
+        }
+    }
+
+    &__filter{
+        padding-top: 40px;
+        margin-bottom: 40px;
+        
+        h1{
+            font-weight: 600;
+            font-size: 42px;
+            line-height: 110%;
+            letter-spacing: -0.02em;
+            color: #121212;
+        }
+
+        &-wrapper{
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        ul{
+            margin-top: 32px;
+            width: 560px;
+
+            li{
+                display: inline-block;
+                margin-right: 16px;
+            }
+
+            a{
+                padding: 9px 32px;
+                display: inline-block;
+                background: #ebedf1;
+                font-weight: 600;
+                font-size: 14px;
+                color: #000;
+
+                &.active,
+                &:hover{
+                    color: white;
+                    background: #ff662c;
+                }
+            }
+        }
+    }
+
+    &__item{
+        &-image{
+            background-position: center;
+            background-size: cover;
+            height: 175px;
+            
+            @media(min-width: 970px){
+                height: 260px;
+            }
+        }
+
+        &-title{
+            margin-top: 15px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 133%;
+            letter-spacing: -0.02em;
+            text-transform: capitalize;
+            color: #000;
+        }
+
+        &-date{
+            margin-top: 24px;
+            font-weight: 400;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+            color: #121212;
+        }
+    }
+
+    &__grid{
+        display: grid;
+        grid-column-gap: 30px;
+        margin-top: 35px;
+        grid-row-gap: 35px;
+        grid-template-columns: repeat(1, 1fr);
+        
+        @media(min-width: 970px){
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media(min-width: 1350px){
+            grid-row-gap: 98px;
+            margin-top: 97px;
+        }
+    }
+
+    &__first{
+        .news-list__item-image{
+            height: 175px;
+
+            @media(min-width: 970px){
+                height: 460px;
+            }
+        }
+    }
+}

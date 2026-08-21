@@ -1,0 +1,40 @@
+.service-price{
+    &__text{
+        grid-column: 1/19;
+        
+        @media(min-width: 992px){
+            grid-column: 1/9;
+        }
+    }
+
+    &__table{
+        grid-column: 1/19;
+        margin-top: 20px;
+    
+        @media(min-width: 992px){
+            margin-top: 0px;
+            grid-column: 10/19;
+        }
+
+        &-wrapper{
+            background-color: var(--white);
+            padding: 10px;
+            margin-bottom: 20px;
+
+            table{
+                width: 100%;
+                margin: 0px;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            th, td{
+                text-align: left;
+                padding: 10px;
+            }
+        }
+    }
+}

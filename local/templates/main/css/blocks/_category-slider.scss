@@ -1,0 +1,123 @@
+.category-slider {
+    .container { 
+        width: 1255px;
+
+        @media(max-width: 1350px){
+            width: 960px;
+        }
+
+        &.feautured{
+            padding-top: 48px;
+            padding-bottom: 81px;
+            
+            @media(max-width: 970px){
+                .category-title{
+                    font-size: 24px;
+                    line-height: 31px;
+                }
+            }
+        }
+        
+        &.mini-padding{
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        &.best-sellers{
+            padding-top: 0px;
+        }
+
+        @media(max-width: 500px){
+            padding-left: 24px;
+            padding-right: 0px;
+        }
+    }
+
+    &.collection-category{
+        @media(max-width: 970px){
+            .container{
+                padding-top: 40px;
+            }
+        }
+    }
+
+    &.index{
+        @media(max-width: 970px){
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .product-title {
+        padding-left: 7px;
+    }
+    
+    @media(min-width: 1440px){
+        &__slick {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+    }
+
+    &__item {
+        margin: 0px 10px;
+        display: block;
+
+        &-image{
+            background: #f9f9f9;
+            height: 299px !important; 
+            margin-bottom: 13px;
+            
+            img{
+                margin: auto;
+                max-height: 225px;
+            }
+        }
+        @media(max-width: 500px){
+            width: 232px;
+            margin-left: 0px;
+            margin-right: 24px;
+        }
+    }
+}
+
+.category-description{
+    .sticker{
+        margin-top: 5px;
+        letter-spacing: 0.12em;
+
+        @media(max-width: 970px){
+            letter-spacing: 0.03em;
+            padding-top: 3px;
+        }
+    }
+
+    .category-title{
+        margin-top: 17px;
+        margin-bottom: 15px;
+        letter-spacing: 0.05em;
+
+        @media(max-width: 970px){
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .text{
+        font-weight: 400;
+        line-height: 23px;
+        font-size: 18px;
+        margin-bottom: 15px;
+
+        @media(max-width: 970px){
+            font-size: 14px;
+            padding-top: 0px;
+            line-height: 17px;
+        }
+    }
+
+    @media(max-width: 970px){
+        margin-top: 58px;
+        margin-bottom: 27px;
+    }
+}
